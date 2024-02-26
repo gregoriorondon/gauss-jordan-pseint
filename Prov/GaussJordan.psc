@@ -1,4 +1,4 @@
-Algoritmo ProcesoGaussJordan
+Algoritmo GaussJordan
 	Escribir "|==============================================================|";
 	Escribir "|       Sistema Digital Matematico del Liceo Andres Bello      |";
 	Escribir "|==============================================================|";
@@ -13,7 +13,7 @@ Algoritmo ProcesoGaussJordan
 	Escribir "";
 	Escribir "________________________________________________________________";
 	Escribir "";
-    Escribir Sin Saltar "Ingrese el n鷐ero de ecuaciones (n):";
+    Escribir Sin Saltar "Ingrese el n煤mero de ecuaciones (n):";
     Leer n;
 	Escribir "________________________________________________________________";
     Dimension matriz[n,n+1];
@@ -25,17 +25,17 @@ Algoritmo ProcesoGaussJordan
 	Escribir "________________________________________________________________";
     Para i<-1 Hasta n Con Paso 1 Hacer
         Para j<-1 Hasta n Con Paso 1 Hacer
-            Escribir Sin Saltar "Ingrese el coeficiente de la variable ", literales[j], " de la ecuaci髇 ", i, ":";
+            Escribir Sin Saltar "Ingrese el coeficiente de la variable ", literales[j], " de la ecuaci贸n ", i, ":";
             Leer  matriz[i,j];
         FinPara
-        Escribir Sin Saltar "Ingrese la constante de la ecuaci髇 ", i, ":";
+        Escribir Sin Saltar "Ingrese la constante de la ecuaci贸n ", i, ":";
         Leer matriz[i,n+1];
 		Escribir  "";
     FinPara
     Escribir "";
     Para i<-1 Hasta n Con Paso 1 Hacer
         Si matriz[i,i]=0 Entonces
-            Escribir "Error: divisi髇 entre cero.";
+            Escribir "Error: divisi贸n entre cero.";
             Escribir "";
         FinSi
         Para k<-1 Hasta n Con Paso 1 Hacer
@@ -49,7 +49,7 @@ Algoritmo ProcesoGaussJordan
     FinPara
 	Escribir "________________________________________________________________";
 	Escribir "";
-    Escribir "Soluci髇:";
+    Escribir "Soluci贸n:";
     Escribir "";
     Para i<-1 Hasta n Con Paso 1 Hacer
         termino <- matriz[i,n+1]/matriz[i,i];
